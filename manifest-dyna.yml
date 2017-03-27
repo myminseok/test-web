@@ -1,0 +1,10 @@
+---
+applications:
+- name: test-web-dyna
+  memory: 1024M
+  instances: 1 
+  host: test-web-dyna
+  path: target/demo-0.0.1-SNAPSHOT.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  services:
+  - dynatrace-saas

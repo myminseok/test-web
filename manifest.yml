@@ -1,0 +1,9 @@
+---
+applications:
+- name: test-web
+  memory: 1024M
+  instances: 1 
+  host: test-web
+  path: target/demo-0.0.1-SNAPSHOT.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+ 
